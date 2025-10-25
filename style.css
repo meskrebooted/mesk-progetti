@@ -1,0 +1,157 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  line-height: 1.6;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-theme {
+  background-color: #f9f9f9;
+  color: #121212;
+}
+
+body.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+header {
+  padding: 1.5rem 1rem;
+  background-color: #7F00FF;
+  color: #ffffff;
+}
+
+header .theme-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #ffffff;
+  color: #7F00FF;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header .theme-toggle:hover {
+  background-color: #7F00FF;
+  color: #ffffff;
+}
+.about-img {
+  width: 150px; /* Ridotta da 300px a 200px */
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.profile h1 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+.profile p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.about {
+  padding: 2rem 1rem;
+}
+
+
+
+.about h2 {
+  font-size: 1.8rem;
+  color: #7F00FF;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.projects {
+  padding: 2rem 1rem;
+}
+
+.projects h2 {
+  font-size: 1.8rem;
+  color: #7F00FF;
+  margin-bottom: 1rem;
+}
+
+.project-list {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+  padding: 1rem;
+  transition: background-color 0.3s;
+}
+
+body.dark-theme .project-card {
+  background-color: #1f1f1f;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #7F00FF;
+}
+
+.project-card h3 {
+  color: #7F00FF;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.project-card p {
+  font-size: 0.9rem;
+  color: #666666;
+  margin: 0.5rem 0 1rem;
+}
+
+body.dark-theme .project-card p {
+  color: #cccccc;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #7F00FF;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #6A00D1;
+}
+
+footer {
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  color: #888;
+  background-color: #f1f1f1;
+}
+
+body.dark-theme footer {
+  background-color: #1f1f1f;
+  color: #cccccc;
+}
