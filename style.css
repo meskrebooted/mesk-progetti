@@ -109,9 +109,12 @@ body.dark-theme .project-card {
 
 .project-card img {
   width: 100%;
-  height: auto;
+  height: 180px;
+  object-fit: contain;
+  background-color: #00000010; /* leggero contrasto */
   border-bottom: 2px solid #7F00FF;
 }
+
 
 .project-card h3 {
   color: #7F00FF;
@@ -154,4 +157,5 @@ footer {
 body.dark-theme footer {
   background-color: #1f1f1f;
   color: #cccccc;
+
 }
