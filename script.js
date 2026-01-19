@@ -48,7 +48,7 @@ downloadZip.addEventListener('click', async () => {
           zip.file(fileName, imageBlob);
         }
       } catch (error) {
-        console.log(`Could not add ${imagePath}: ${error.message}`);
+        console.error(`Could not add ${imagePath}: ${error.message}`);
       }
     }
     
@@ -66,6 +66,6 @@ downloadZip.addEventListener('click', async () => {
     
   } catch (error) {
     console.error('Error creating ZIP:', error);
-    alert('Errore durante la creazione del file ZIP. Riprova.');
+    alert('Errore durante la creazione del file ZIP. Verifica la connessione e riprova.');
   }
 });

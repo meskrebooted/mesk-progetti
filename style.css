@@ -45,7 +45,7 @@ header .theme-toggle:hover {
 header .download-zip {
   position: absolute;
   top: 1rem;
-  right: 10rem;
+  right: 11rem;
   padding: 0.5rem 1rem;
   background-color: #ffffff;
   color: #7F00FF;
@@ -59,6 +59,13 @@ header .download-zip {
 header .download-zip:hover {
   background-color: #7F00FF;
   color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  header .download-zip {
+    top: 3.5rem;
+    right: 1rem;
+  }
 }
 .about-img {
   width: 150px; /* Ridotta da 300px a 200px */
