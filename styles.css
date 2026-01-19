@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+/* Header */
+.header {
+  margin-bottom: 64px;
+}
+
+.label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 12px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.name-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.name-toggle {
+  position: relative;
+  margin: 0;
+  cursor: pointer;
+}
+
+.name-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.name-toggle:hover .name-default {
+  opacity: 0;
+}
+
+.name-toggle:hover .name-hover {
+  opacity: 1;
+}
+
+.toggle-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  color: #888;
+  opacity: 0.5;
+}
+
+.toggle-icon svg {
+  display: block;
+}
+
+.bio {
+  color: #888;
+  font-size: 16px;
+}
+
+.links {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.links a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #888;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.links a:hover {
+  color: #fff;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 64px;
+}
+
+.section-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  font-weight: 400;
+  color: #888;
+  margin-bottom: 24px;
+}
+
+/* Projects */
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.project {
+  display: block;
+  padding: 16px;
+  margin: 0 -16px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.2s;
+}
+
+.project:hover {
+  background: #111;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.project-name {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.project-desc {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.project-tech {
+  display: flex;
+  gap: 8px;
+}
+
+.project-tech span {
+  font-size: 12px;
+  color: #666;
+}
+
+.project-icon {
+  opacity: 0;
+  transition: opacity 0.2s;
+  flex-shrink: 0;
+  color: #888;
+}
+
+.project:hover .project-icon {
+  opacity: 1;
+}
+
+/* Skills */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill {
+  padding: 6px 12px;
+  background: #111;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Footer */
+.footer {
+  padding-top: 32px;
+  border-top: 1px solid #222;
+}
+
+.footer p {
+  font-size: 14px;
+  color: #888;
+}
