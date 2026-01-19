@@ -41,6 +41,25 @@ header .theme-toggle:hover {
   background-color: #7F00FF;
   color: #ffffff;
 }
+
+header .download-zip {
+  position: absolute;
+  top: 1rem;
+  right: 10rem;
+  padding: 0.5rem 1rem;
+  background-color: #ffffff;
+  color: #7F00FF;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header .download-zip:hover {
+  background-color: #7F00FF;
+  color: #ffffff;
+}
 .about-img {
   width: 150px; /* Ridotta da 300px a 200px */
   height: auto;
